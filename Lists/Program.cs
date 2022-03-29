@@ -13,3 +13,16 @@ int[] destinationArray = new int[sourceList.Count];
 sl.CopyListToAnArray(destinationList, destinationArray);
 sl.PrintArray(destinationArray);
 
+/*ChainedList*/
+ChainedList cl = new ChainedList();
+cl.Add(1);
+
+cl.Add(2);
+cl.Add(3);
+cl.Add(4);
+cl.Add(5);
+
+cl.RemoveAt(2);
+cl.ReplaceAt(0);
+cl.Print();
+
