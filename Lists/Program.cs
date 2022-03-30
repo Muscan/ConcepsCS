@@ -1,6 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Lists;
-
+/*
 SimpleList sl = new SimpleList();
 List<int> sourceList = new List<int> { 1, 2, 3 };
 List<int> destinationList = new List<int>();
@@ -13,7 +13,7 @@ int[] destinationArray = new int[sourceList.Count];
 sl.CopyListToAnArray(destinationList, destinationArray);
 sl.PrintArray(destinationArray);
 
-/*ChainedList*/
+//ChainedList
 ChainedList cl = new ChainedList();
 cl.Add(1);
 
@@ -25,4 +25,6 @@ cl.Add(5);
 cl.RemoveAt(2);
 cl.ReplaceAt(0);
 cl.Print();
+*/
+
 
