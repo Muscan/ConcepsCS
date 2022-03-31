@@ -32,15 +32,7 @@ namespace Lists
             Console.WriteLine($"Execution Time for direct sort: {watch.ElapsedMilliseconds} ms");
         }
 
-        //print method fir the sorted array 
-
-        public  void Print(int[] arr)
-        {
-            foreach (int i in arr)
-            {
-                Console.Write(i + " ");
-            }
-        }
+       
 
         //Bubble sort method    
 
