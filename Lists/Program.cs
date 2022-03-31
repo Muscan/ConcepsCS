@@ -27,4 +27,19 @@ cl.ReplaceAt(0);
 cl.Print();
 */
 
+Sort sort = new Sort();
+int[] arr = new int[] { -3222454,2154,2154,21546,-56465465,0,65456454,1000000,5454545 };
+Random random = new Random();
+int[] array = new int[10000];
+for(int i=0; i<array.Length; i++)
+{
+    array[i] = random.Next();
+}
+//sort.DirectSort(array);
+
+sort.EfficientBubbleSort(array); //209ms
+
+//sort.DirectSort(array);//303ms
+    
+
 

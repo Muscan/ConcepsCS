@@ -86,8 +86,6 @@ namespace Lists
                 ReplaceAt(v);
             }
         }
-        //print
-
        
     }
 }
