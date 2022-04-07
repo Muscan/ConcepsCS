@@ -18,7 +18,7 @@ namespace Lists
             }
             return array;
         }
-        //print method fir the sorted array 
+        //print method for the sorted array 
         
         public static void Print(int[] arr)
         {
@@ -27,11 +27,5 @@ namespace Lists
                 Console.Write(i + " ");
             }
         }
-
-
-
     }
-    
-    
-    
 }

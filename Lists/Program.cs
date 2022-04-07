@@ -27,16 +27,27 @@ cl.ReplaceAt(0);
 cl.Print();
 
 
-Sort sort = new Sort();
-int[] arr = new int[] { -3222454,2154,2154,21546,-56465465,0,65456454,1000000,5454545 };
-Random random = new Random();
-int[] array = Utils.RandomArray(10000);
+//Sort sort = new Sort();
+//int[] arr = new int[] { -3222454,2154,2154,21546,-56465465,0,65456454,1000000,5454545 };
+//Random random = new Random();
+//int[] array = Utils.RandomArray(10000);
 
 //sort.DirectSort(array);
 
-sort.EfficientBubbleSort(array); //209ms
-Utils.Print(array);
+//sort.EfficientBubbleSort(array); //209ms
+//Utils.Print(array);
 //sort.DirectSort(array);//303ms
-    
+
+//Linkedlist with head and node
+LinkedListForNodeList ll = new LinkedListForNodeList();
+ll.InsertHead(1);
+ll.InsertHead(2);
+ll.InsertTail(0);
+//inserts a new node with value 3 after node with value 1
+ll.InsertAfterKey(1, 3);
+ll.PrintList();
+
+
+
 
 

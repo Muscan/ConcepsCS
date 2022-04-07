@@ -19,11 +19,11 @@ namespace Lists
             {
                 for (int j = i + 1; j < arr.Length; j++)
                 {
-                    if (arr[i] > arr[j])
+                    if (arr[i] > arr[j]) //arr[i]=5, arr[j]=3
                     {
-                        temp = arr[i];
-                        arr[i] = arr[j];
-                        arr[j] = temp;
+                        temp = arr[i]; //temp = 5, arr[i]=5, arr[j]=3
+                        arr[i] = arr[j]; //temp=5, arr[i]3, arr[j]=3
+                        arr[j] = temp; //temp=5, arr[i]=3, arr[j]=5
                     }
                 }
             }

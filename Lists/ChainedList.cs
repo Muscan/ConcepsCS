@@ -9,6 +9,7 @@ namespace Lists
     internal class ChainedList
     {
         //declare a variable of type Node
+        //! The Chained list should be with int not with List
         private List<int> Head { get; set; }
         private List<int> Tail { get; set; }
 
@@ -32,12 +33,12 @@ namespace Lists
 
         public void Print()
         {
-            Console.WriteLine("Head: ");
+            Console.WriteLine("Head chained list: ");
             foreach (var item in Head)
             {
                 Console.WriteLine(item);
             }
-            Console.WriteLine("Tail: ");
+            Console.WriteLine("Tail chained list: ");
             foreach (var item in Tail)
             {
                 Console.WriteLine(item);
