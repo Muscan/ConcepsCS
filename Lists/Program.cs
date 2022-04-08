@@ -40,13 +40,20 @@ cl.Print();
 
 //Linkedlist with head and node
 LinkedListForNodeList ll = new LinkedListForNodeList();
+ll.InsertHead(5);
+ll.InsertHead(3);
 ll.InsertHead(1);
-ll.InsertHead(2);
-ll.InsertTail(0);
+ll.InsertHead(6);
+ll.InsertTail(7);
 //inserts a new node with value 3 after node with value 1
-ll.InsertAfterKey(1, 3);
-ll.PrintList();
+ll.InsertAfterKey(1, 4);
+ll.InsertBeforeKey(5, 8);
 
+
+ll.DeleteNode(1);//deletes a specified node
+ll.DeleteHead();//deletes the head node
+ll.DeleteTail();//deletes the tail node
+ll.PrintList();
 
 
 
