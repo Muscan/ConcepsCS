@@ -1,30 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Lists;
 
-SimpleList sl = new SimpleList();
-List<int> sourceList = new List<int> { 1, 2, 3 };
-List<int> destinationList = new List<int>();
-sl.CopyList(sourceList, destinationList);
-sl.Print(destinationList);
 
-
-//declare an array which has the same size of the source list. 
-int[] destinationArray = new int[sourceList.Count];
-sl.CopyListToAnArray(destinationList, destinationArray);
-sl.PrintArray(destinationArray);
-
-//ChainedList
-ChainedList cl = new ChainedList();
-cl.Add(1);
-
-cl.Add(2);
-cl.Add(3);
-cl.Add(4);
-cl.Add(5);
-
-cl.RemoveAt(2);
-cl.ReplaceAt(0);
-cl.Print();
 
 
 //Sort sort = new Sort();
@@ -38,6 +15,7 @@ cl.Print();
 //Utils.Print(array);
 //sort.DirectSort(array);//303ms
 
+/*
 //Linkedlist with head and node
 LinkedListForNodeList ll = new LinkedListForNodeList();
 ll.InsertHead(5);
@@ -54,6 +32,17 @@ ll.DeleteNode(1);//deletes a specified node
 ll.DeleteHead();//deletes the head node
 ll.DeleteTail();//deletes the tail node
 ll.PrintList();
+*/
+//DoubleLinkedList
+DoubleLinkedList dll = new DoubleLinkedList();
+dll.InsertHead(5);
+dll.InsertHead(3);
+//after node with key 5, we insert node with value 4
+dll.InsertAfterKey(5, 4);
+dll.InsertBeforeKey(5, 8);
+dll.InsertTail(1);
+dll.ReversePrintList();
+
 
 
 

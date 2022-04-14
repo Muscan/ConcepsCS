@@ -8,7 +8,7 @@ namespace Lists
 {
     internal class NodeList
     {
-        public int data;
+        public int data;//key
         //next is the pointer, which is a reference to the next node
         public NodeList next;
         public NodeList(int d)
