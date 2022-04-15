@@ -104,6 +104,10 @@ namespace Lists
                     newNode.prevNode = current.prevNode;
                     current.prevNode.nextNode = newNode;
                     current.prevNode = newNode;
+                    if (current == head)
+                    {
+                        head = newNode;
+                    }
                     return;
                 }
                 current = current.nextNode;
@@ -128,8 +132,15 @@ namespace Lists
                     DoubleNodeList newNode = new DoubleNodeList(data);
                     newNode.prevNode = current;
                     newNode.nextNode = current.nextNode;
-                    current.nextNode.prevNode = newNode;
+                    if (current.nextNode != null)
+                    {
+                        current.nextNode.prevNode = newNode;
+                    }
                     current.nextNode = newNode;
+                    if (current == tail)
+                    {
+                        tail = newNode;
+                    }
                     return;
                 }
                 current = current.nextNode;

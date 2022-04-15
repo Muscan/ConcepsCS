@@ -41,7 +41,9 @@ dll.InsertHead(3);
 dll.InsertAfterKey(5, 4);
 dll.InsertBeforeKey(5, 8);
 dll.InsertTail(1);
-dll.ReversePrintList();
+dll.RemoveFromHead();
+dll.RemoveFromTail();
+dll.PrintList();
 
 
 
