@@ -1,19 +1,16 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Lists;
+using System;
+/*
+Sort sort = new Sort();
+int[] arr = new int[] { -3222454,2154,2154,21546,-56465465,0,65456454,1000000,5454545 };
+Random random = new Random();
+int[] array = Utils.RandomArray(10000);
 
-
-
-
-//Sort sort = new Sort();
-//int[] arr = new int[] { -3222454,2154,2154,21546,-56465465,0,65456454,1000000,5454545 };
-//Random random = new Random();
-//int[] array = Utils.RandomArray(10000);
-
-//sort.DirectSort(array);
-
-//sort.EfficientBubbleSort(array); //209ms
-//Utils.Print(array);
-//sort.DirectSort(array);//303ms
+sort.DirectSort(array);
+sort.EfficientBubbleSort(array); //209ms
+Utils.Print(array);
+sort.DirectSort(array);//303ms
 
 /*
 //Linkedlist with head and node
@@ -44,6 +41,9 @@ dll.InsertTail(1);
 dll.RemoveFromHead();
 dll.RemoveFromTail();
 dll.PrintList();
+
+
+
 
 
 

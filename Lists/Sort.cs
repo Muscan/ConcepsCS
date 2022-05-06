@@ -31,7 +31,8 @@ namespace Lists
            
             Console.WriteLine($"Execution Time for direct sort: {watch.ElapsedMilliseconds} ms");
         }
-        /*3,9,7,1
+        /*Compares each number, with each number after
+         * 3,9,7,1
         * first iteration
         for (int i = 0; i < arr.Length-1; i++)
         {
@@ -68,7 +69,7 @@ namespace Lists
         {
             var watch = System.Diagnostics.Stopwatch.StartNew();
 
-            bool swapped = false;
+            bool swapped;
             int n = nr.Length;
             do
             {
@@ -92,6 +93,24 @@ namespace Lists
             Console.WriteLine($"Execution Time for Bubble Sort: {watch.ElapsedMilliseconds} ms");
             return nr;
         }
+        /* 3,9,7,1                                                                                                    while (swapped == true) 0     1     2    3            
+         * n    |      i     |     i < n - 1  |       nr[i] > nr[i + 1]  |  aux   | nr[i]   |   nr[i+1] | swapped    |                        3     9     7    1              
+         * 4           0           0<3(4-1)T          nr[0] > nr [0 + 1]F    -        -           -          F                                3     9     7    1              
+         * -           1           1<3T               nr[1] > nr [1 + 1]T    9        7           9          T                                3     7     9    1
+         *                                                  (9>7)                                                                            
+         *             2           2<3T               nr[2] > nr [2 + 1]T    9        1           9          T                                3     7     1    9
+         *             3           3<3F                         -                                                            T
+         * 3           -             -                          -           -       -          -             F                                                                 
+         *             0           0<2(3-1)T                3>7F            -       -          -           -                                  3     7      1   9    
+         *             1           1<2T                     7>1T             7        1           7          T                                3     1      7   9
+         *             2           2<2F                     -
+         * 2           -            -                       -                                                F               T
+         *             0            0<1T                    3>1T             3        1           3          T                                1     3      7   9
+         *             1            1<1F                    -                                                                T
+         * 1           -                                                                                     F 
+         *             0            0<0F
+         * 0                                                                                                                 F
+         */
 
     }
 }
